@@ -181,9 +181,6 @@ p{margin:0}
 .d-txt-s{fill:var(--ink-2); font-size:11.5px}
 .d-acc{fill:none; stroke:var(--accent); stroke-width:2.4}
 .d-acc-t{fill:var(--accent); font-size:12px; font-weight:700}
-
-/* ---------- итог ---------- */
-.outcome{margin-top:52px; border-top:2px solid var(--ink); padding-top:30px}
 .out.w{background:var(--west-soft); border-color:var(--west)}
 .out.e{background:var(--east-soft); border-color:var(--east)}
 .out.w h4{color:var(--west)} .out.e h4{color:var(--east)}
@@ -252,7 +249,8 @@ p{margin:0}
 .mem-head{display:flex; flex-direction:column; gap:30px}
 .p-icon{align-self:center}
 .p-icon img{max-width:210px}
-@media (max-width:760px){ .p-icon img{max-width:180px} }
+@media (max-width:760px){ .p-icon img{max-width:180px}
+}
 @media (max-width:860px){
   .plate{margin-top:4px}
   .plate img{max-width:280px}
@@ -265,28 +263,7 @@ p{margin:0}
 }
 
 /* ---------- итог: сравнение двух линий ---------- */
-.outcome .sec-title{margin-bottom:16px}
-.cmp{
-  display:grid; grid-template-columns:minmax(120px,190px) 1fr 1fr;
-  gap:1px; background:var(--rule); border:1px solid var(--rule);
-}
-.cmp > div{background:var(--surface); padding:15px 17px}
-.cmp-h{
-  font-size:.78rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase;
-  background:var(--surface-2);
-}
-.cmp-h.hw{color:var(--west)} .cmp-h.he{color:var(--east)}
-.cmp-k{font-size:.82rem; font-weight:700; color:var(--ink-2); background:var(--surface-2)}
-.cmp-v{font-size:.93rem; line-height:1.45}
-.cmp > .cw{background:var(--west-soft)}
-.cmp > .ce{background:var(--east-soft)}
-@media (max-width:760px){
-  .cmp{grid-template-columns:80px 1fr 1fr}
-  .cmp > div{padding:10px 11px}
-  .cmp-h{font-size:.64rem; letter-spacing:.08em}
-  .cmp-k{font-size:.7rem}
-  .cmp-v{font-size:.82rem}
-}</style>
+</style>
 
 <!-- значки и наконечники стрелок -->
 <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -466,26 +443,6 @@ p{margin:0}
 
   </div>
 
-  <section class="outcome">
-    <h2 class="sec-title">Две линии одной политики</h2>
-    <div class="cmp">
-      <div class="cmp-h cmp-hx"></div>
-      <div class="cmp-h hw">Запад</div>
-      <div class="cmp-h he">Восток</div>
-
-      <div class="cmp-k">Чего от него хотели</div>
-      <div class="cmp-v cw">Веры. Войско против Орды предлагали в обмен на унию с Римом</div>
-      <div class="cmp-v ce">Денег и воинов. Дани с каждого двора и полков на чужую войну</div>
-
-      <div class="cmp-k">Чем он отвечал</div>
-      <div class="cmp-v cw">Оружием. Две битвы за два года и твёрдый отказ папским легатам</div>
-      <div class="cmp-v ce">Поездками и торгом. Почти год провёл в Орде, чтобы договориться</div>
-
-      <div class="cmp-k">Что из этого вышло</div>
-      <div class="cmp-v cw">Орден вернул захваченное, на рубеже стало тихо на десять лет</div>
-      <div class="cmp-v ce">Дань платили, но воинов не отдали, а пленных выкупали обратно</div>
-    </div>
-  </section>
 
 </div>
 
