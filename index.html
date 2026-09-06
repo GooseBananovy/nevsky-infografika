@@ -6,34 +6,18 @@
 
 <style>
 :root{
-  --ground:#DCE2E1; --surface:#EFF2F1; --surface-2:#E5EAE9;
-  --ink:#182220; --ink-2:#4C5856; --rule:#BCC7C5;
-  --west:#14536B; --west-soft:#D5E2E9; --west-line:#8FB2C1;
-  --east:#8F5510; --east-soft:#F1E3CB; --east-line:#C9A05E;
-  --accent:#AE2318; --accent-soft:#F0D9D6;
-  --gold:#6F6034; --gold-soft:#E7E2D1;
-  --serif:"Alegreya","PT Serif",Georgia,serif;
-  --sans:"Alegreya Sans","PT Sans","Segoe UI",system-ui,sans-serif;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:#111614; --surface:#1A201E; --surface-2:#222927;
-    --ink:#E9EEEC; --ink-2:#9CA9A6; --rule:#333D3B;
-    --west:#74BAD6; --west-soft:#123240; --west-line:#3C6E83;
-    --east:#E4A751; --east-soft:#382710; --east-line:#8A6528;
-    --accent:#F0685C; --accent-soft:#3A1815;
-    --gold:#CDB57C; --gold-soft:#2A2718;
-  }
-}
-:root[data-theme="dark"]{
+  /* Страница намеренно одноцветная: тёмная всегда, независимо от настроек
+     системы у того, кто её открыл. Второй палитры нет, поэтому все цвета
+     объявлены здесь и только здесь. */
   --ground:#111614; --surface:#1A201E; --surface-2:#222927;
   --ink:#E9EEEC; --ink-2:#9CA9A6; --rule:#333D3B;
   --west:#74BAD6; --west-soft:#123240; --west-line:#3C6E83;
   --east:#E4A751; --east-soft:#382710; --east-line:#8A6528;
   --accent:#F0685C; --accent-soft:#3A1815;
   --gold:#CDB57C; --gold-soft:#2A2718;
+  --serif:"Alegreya","PT Serif",Georgia,serif;
+  --sans:"Alegreya Sans","PT Sans","Segoe UI",system-ui,sans-serif;
 }
-
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--ground); color:var(--ink);
@@ -246,7 +230,7 @@ p{margin:0}
   .card.big{padding:18px}
 }
 @media print{
-  body{background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  body{-webkit-print-color-adjust:exact; print-color-adjust:exact}
   @page{size:A3 portrait; margin:10mm}
   .row,.card,.fig,.hinge{break-inside:avoid}
 }
